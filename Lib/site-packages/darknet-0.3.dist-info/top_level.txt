@@ -1,0 +1,4 @@
+darknet/file
+darknet/image
+darknet/network
+darknet/text

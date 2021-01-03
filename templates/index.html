@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+	<title>
+		Road Pulse : Violation detection in real time
+	</title>
+{% endblock %}
+{% block body %}
+	<br />
+<div class="Header">
+		<div class="container">
+			<img class="left" src='static\icon1.png' />
+			<nav id = "right">
+				<ul class="nav_class">
+					<li class="navli nav_link a"><a href="#">LOGOUT</a></li>
+					<li class="navli nav_link a"><a href="/aboutUs">CONTACT US</a></li>
+					<li class="navli nav_link a"><a href="#">DOWNLOAD</a></li>
+					<li class="navli nav_link a"><a href="#">HOME</a></li>
+				</ul>
+			</nav>
+		</div>
+</div>
+
+
+<div class = "data">
+	<div class="container">
+		<h1 align="center" style="color: black">Upload Video For Dataset</h1>
+		<form class="add" action = "http://localhost:5000/uploader" method = "POST" enctype = "multipart/form-data">
+			<div class="row">
+				<div class="col">
+					<input type = "file" name = "file"  />
+				</div>
+				<div class="col">
+					<p>Testing</p>
+				</div>
+			</div>
+			<input class="buttons" name="" type="submit" value="Submit" />
+ 		</form>
+	</div>
+</div>
+
+{% endblock %}

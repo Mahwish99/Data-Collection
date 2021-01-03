@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block body %}
+{% block head %}
+{% endblock %}
+
+ <h1>Data Collection Lab</h1>
+<div class = "log-box">
+    <img class="iconimg" src='static\icon.png' />
+    <form action = "http://localhost:5000/signin" method = "POST" enctype = "multipart/form-data">
+        <p>Email<br/></p>
+        <input type="text" placeholder="Username" name="username" value="{{request.form.username }}">
+        <p>Password<br/></p>
+        <input type="password" placeholder="Password" name="password" value="{{request.form.password }}">
+   <input class="button" name="" type="submit" value="Sign In" />
+   <a href="#">Forget Password?</a>
+   </form>
+</div>
+
+  {% endblock %}
